@@ -1,7 +1,17 @@
-kampus = input("isikan nama kampus anda :")
+words = "UNIVERSITAS NUSA PUTRA SUKABUMI"
 
-print("huruf pertama :", kampus[0])
-print("huruf terakhir :", kampus[-1])
-print("Kalimat pertama: ", kampus[16:29])
-print("membalik kalimat :", kampus[::-1])
-print("mengambil kalimat ke dua :", kampus[5:1])
+#a putra nusa
+split_words = words.split() 
+print("a. ", split_words[2].lower(), split_words[1].lower())
+
+#b NIVERSITAS NSA PTRA SKABMI
+print("b. ",words.replace("U",""))
+
+#c SUKABUMI PUTRA NUSA UNIVERSITAS
+print("c. ", split_words[3], split_words[2], split_words[1], split_words[0])
+
+#d UNPS
+print("d. ", words.split()[0][0] + words.split()[1][0] + words.split()[2][0] + words.split()[3][0])
+
+#e TAS SAPU BUMI
+print("e. ", words.split()[0][-3:], words.split()[1][-2:] + words.split()[2][:2], words.split()[3][-4:] )
